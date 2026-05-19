@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PROHIDRAUT S.A. — Reparación y Fabricación Hidráulica Industrial</title>
 <meta name="description" content="Especialistas en reparación y fabricación de cilindros hidráulicos para minería e industria. ISO 9001 + OHSAS 18001. Ate, Lima, Perú.">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;700;800;900&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -14,7 +14,6 @@
   --ink3:#1e2e40;
   --orange:#e8650a;
   --orange2:#ff7a20;
-  --amber:#f5a623;
   --steel:#8fa8bf;
   --cream:#f2ede6;
   --white:#fafaf8;
@@ -22,43 +21,39 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'Barlow',sans-serif;background:var(--ink);color:var(--white);overflow-x:hidden}
-
-/* ─── SCROLLBAR ─── */
 ::-webkit-scrollbar{width:4px}
 ::-webkit-scrollbar-track{background:var(--ink)}
 ::-webkit-scrollbar-thumb{background:var(--orange);border-radius:2px}
 
-/* ─── TOPBAR ─── */
+/* TOPBAR */
 .topbar{background:var(--orange);padding:7px 48px;display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:.06em}
 .topbar a{color:var(--ink);text-decoration:none}
 .topbar-right{display:flex;gap:24px;align-items:center;color:var(--ink)}
 .cert-pill{background:var(--ink);color:var(--orange);padding:3px 10px;border-radius:2px;font-size:10px;font-weight:800;letter-spacing:.1em}
 
-/* ─── NAV ─── */
+/* NAV */
 nav{position:sticky;top:0;z-index:200;background:rgba(10,21,32,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.07);padding:0 48px;height:68px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
-.logo-mark{width:40px;height:40px;position:relative;flex-shrink:0}
-.logo-mark svg{width:40px;height:40px}
 .nav-brand strong{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.06em;color:var(--white);display:block;line-height:1}
 .nav-brand span{font-size:9px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}
 .nav-links{display:flex;gap:28px;align-items:center}
 .nav-links a{color:var(--steel);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--orange)}
-.nav-wa{background:var(--orange);color:var(--ink)!important;padding:9px 20px;border-radius:3px;font-weight:800!important;display:flex;align-items:center;gap:7px;transition:background .2s,transform .15s}
+.nav-wa{background:var(--orange);color:var(--ink)!important;padding:9px 20px;border-radius:3px;font-weight:800!important;transition:background .2s,transform .15s}
 .nav-wa:hover{background:var(--orange2)!important;transform:translateY(-1px)}
 
-/* ─── HERO ─── */
+/* HERO */
 .hero{min-height:92vh;position:relative;display:flex;align-items:center;overflow:hidden;padding:80px 48px 80px 80px}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 40%,#0d2035 100%)}
-.hero-grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(232,101,10,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(232,101,10,.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.hero-glow{position:absolute;right:-200px;top:50%;transform:translateY(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(232,101,10,.1) 0%,transparent 65%);pointer-events:none}
-.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-bg-img{position:absolute;inset:0;background-image:url('hero-taller.jpg');background-size:cover;background-position:center;filter:brightness(.25) saturate(.6)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,21,32,.95) 50%,rgba(10,21,32,.3) 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(232,101,10,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(232,101,10,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-content{position:relative;z-index:2;max-width:680px}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;margin-bottom:28px;opacity:0;animation:fadeUp .8s .1s ease both}
-.hero-eyebrow-line{width:40px;height:2px;background:var(--orange)}
+.hero-eyebrow-line{width:40px;height:2px;background:var(--orange);flex-shrink:0}
 .hero-eyebrow span{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange)}
-.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,9vw,128px);line-height:.92;letter-spacing:.02em;margin-bottom:8px;opacity:0;animation:fadeUp .8s .2s ease both}
-.hero h1 .outline{-webkit-text-stroke:2px var(--orange);color:transparent}
-.hero-sub{font-size:18px;color:var(--steel);line-height:1.7;max-width:520px;margin:28px 0 44px;opacity:0;animation:fadeUp .8s .35s ease both}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,9vw,120px);line-height:.92;letter-spacing:.02em;margin-bottom:8px;opacity:0;animation:fadeUp .8s .2s ease both}
+.hero h1 .outline{-webkit-text-stroke:2px var(--orange);color:transparent;display:block}
+.hero-sub{font-size:17px;color:var(--steel);line-height:1.75;max-width:520px;margin:28px 0 44px;opacity:0;animation:fadeUp .8s .35s ease both}
 .hero-sub strong{color:var(--white)}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s .45s ease both}
 .btn-primary{background:var(--orange);color:var(--ink);padding:15px 32px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:3px;display:inline-flex;align-items:center;gap:9px;transition:background .2s,transform .15s}
@@ -70,90 +65,122 @@ nav{position:sticky;top:0;z-index:200;background:rgba(10,21,32,.97);backdrop-fil
 .stat-val span{color:var(--orange)}
 .stat-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-top:2px}
 
-/* ─── CERT STRIP ─── */
-.cert-strip{background:var(--orange);padding:20px 48px;display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap}
-.cert-item{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.04em}
-.cert-icon{font-size:20px}
+/* CERT STRIP */
+.cert-strip{background:var(--ink2);border-top:3px solid var(--orange);border-bottom:1px solid rgba(255,255,255,.06);padding:24px 48px;display:flex;align-items:center;justify-content:center;gap:48px;flex-wrap:wrap}
+.cert-item{display:flex;align-items:center;gap:14px}
+.cert-logo{height:44px;width:auto;filter:brightness(0) invert(1);opacity:.7;transition:opacity .2s}
+.cert-logo:hover{opacity:1}
+.cert-text{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--steel)}
+.cert-text small{display:block;font-size:10px;color:var(--muted);font-weight:400;letter-spacing:.04em}
+.cert-divider{width:1px;height:40px;background:rgba(255,255,255,.08)}
 
-/* ─── SECTIONS ─── */
+/* SECTIONS */
 section{padding:96px 48px}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:10px}
-.eyebrow::before{content:'';width:28px;height:2px;background:var(--orange)}
+.eyebrow::before{content:'';width:28px;height:2px;background:var(--orange);flex-shrink:0}
 .section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,6vw,80px);line-height:.95;letter-spacing:.02em;margin-bottom:16px}
 .section-sub{color:var(--steel);font-size:16px;line-height:1.75;max-width:540px}
 
-/* ─── SERVICIOS ─── */
-.servicios{background:var(--ink2)}
+/* NOSOTROS */
+.nosotros{background:var(--ink2)}
+.nosotros-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:60px}
+.nosotros-text p{color:#b0c4d8;font-size:15px;line-height:1.85;margin-bottom:18px}
+.nosotros-text p strong{color:var(--white)}
+.nosotros-fotos{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.nosotros-foto{aspect-ratio:1;overflow:hidden;position:relative}
+.nosotros-foto img{width:100%;height:100%;object-fit:cover;filter:brightness(.8) saturate(.8);transition:all .4s}
+.nosotros-foto:hover img{filter:brightness(1) saturate(1);transform:scale(1.04)}
+.nosotros-foto.grande{grid-column:1/-1;aspect-ratio:16/7}
+.nosotros-stats{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:3px}
+.nost-stat{background:var(--ink3);padding:28px;border-top:3px solid var(--orange)}
+.nost-stat .num{font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--orange);line-height:1}
+.nost-stat .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px}
+
+/* SERVICIOS */
+.servicios{background:var(--ink)}
 .services-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:24px;flex-wrap:wrap}
 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
-.srv-card{background:var(--ink3);overflow:hidden;position:relative;cursor:default;transition:transform .25s}
+.srv-card{background:var(--ink2);overflow:hidden;position:relative;transition:transform .25s}
 .srv-card:hover{transform:translateY(-4px)}
-.srv-img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:brightness(.75) saturate(.8);transition:filter .3s,transform .3s}
-.srv-card:hover .srv-img{filter:brightness(.9) saturate(1);transform:scale(1.04)}
-.srv-body{padding:20px 20px 24px;border-top:3px solid transparent;transition:border-color .25s}
+.srv-img-wrap{position:relative;overflow:hidden;aspect-ratio:4/3}
+.srv-img{width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.75);transition:all .4s}
+.srv-card:hover .srv-img{filter:brightness(.95) saturate(1);transform:scale(1.06)}
+.srv-img-placeholder{width:100%;aspect-ratio:4/3;background:var(--ink3);display:flex;align-items:center;justify-content:center}
+.srv-img-placeholder svg{width:48px;height:48px;opacity:.25}
+.srv-num-badge{position:absolute;top:12px;left:12px;background:var(--orange);color:var(--ink);font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:.06em;padding:2px 10px;border-radius:2px}
+.srv-body{padding:22px 20px 26px;border-top:3px solid transparent;transition:border-color .25s}
 .srv-card:hover .srv-body{border-top-color:var(--orange)}
-.srv-num{font-family:'Bebas Neue',sans-serif;font-size:11px;letter-spacing:.15em;color:var(--orange);margin-bottom:6px}
-.srv-title{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;line-height:1.2}
-.srv-desc{font-size:12px;color:var(--muted);line-height:1.6}
-.srv-placeholder{width:100%;aspect-ratio:4/3;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:36px;color:var(--muted)}
+.srv-title{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;line-height:1.2;color:var(--white)}
+.srv-desc{font-size:12px;color:var(--muted);line-height:1.65}
 
-/* ─── PRODUCTOS ─── */
-.productos{background:var(--ink)}
+/* PRODUCTOS */
+.productos{background:var(--ink2)}
 .prod-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:24px;flex-wrap:wrap}
 .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
-.prod-card{background:var(--ink2);padding:36px 32px;border-bottom:3px solid transparent;transition:all .25s;position:relative;overflow:hidden}
-.prod-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.prod-card:hover::before{transform:scaleX(1)}
-.prod-card:hover{background:var(--ink3);transform:translateY(-3px)}
-.prod-icon{font-size:32px;margin-bottom:18px}
-.prod-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px}
-.prod-desc{font-size:13px;color:var(--steel);line-height:1.65;margin-bottom:16px}
-.prod-specs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
-.spec-tag{background:rgba(232,101,10,.1);border:1px solid rgba(232,101,10,.2);color:var(--orange);font-size:11px;font-weight:600;padding:3px 10px;border-radius:2px;letter-spacing:.06em}
-.prod-wa{display:inline-flex;align-items:center;gap:7px;background:rgba(37,211,102,.1);border:1px solid rgba(37,211,102,.25);color:#25d366;padding:9px 18px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;transition:background .2s}
-.prod-wa:hover{background:rgba(37,211,102,.2)}
+.prod-card{background:var(--ink3);overflow:hidden;position:relative;transition:transform .25s}
+.prod-card:hover{transform:translateY(-4px)}
+.prod-img-wrap{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--ink)}
+.prod-img{width:100%;height:100%;object-fit:cover;filter:brightness(.75) saturate(.7);transition:all .4s}
+.prod-card:hover .prod-img{filter:brightness(1) saturate(1);transform:scale(1.05)}
+.prod-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--ink)}
+.prod-img-placeholder svg{width:56px;height:56px;opacity:.15}
+.prod-body{padding:24px 24px 28px;border-top:3px solid transparent;transition:border-color .25s}
+.prod-card:hover .prod-body{border-top-color:var(--orange)}
+.prod-name{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;color:var(--white)}
+.prod-desc{font-size:13px;color:var(--steel);line-height:1.65;margin-bottom:14px}
+.prod-specs{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:18px}
+.spec-tag{background:rgba(232,101,10,.1);border:1px solid rgba(232,101,10,.2);color:var(--orange);font-size:11px;font-weight:600;padding:3px 9px;border-radius:2px;letter-spacing:.04em}
+.prod-wa{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);padding:9px 18px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;transition:all .2s}
+.prod-wa:hover{background:var(--orange);border-color:var(--orange);color:var(--ink)}
 
-/* ─── SECTORES ─── */
-.sectores{background:var(--ink2)}
+/* SECTORES */
+.sectores{background:var(--ink)}
 .sectores-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:52px}
-.sector-card{background:var(--ink3);padding:32px 28px;border-left:3px solid var(--orange);transition:background .2s}
-.sector-card:hover{background:rgba(232,101,10,.07)}
-.sector-icon{font-size:28px;margin-bottom:14px}
-.sector-name{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
-.sector-desc{font-size:12px;color:var(--muted);line-height:1.6}
+.sector-card{background:var(--ink2);padding:36px 28px;border-top:3px solid var(--orange);transition:background .2s}
+.sector-card:hover{background:var(--ink3)}
+.sector-icon-wrap{width:52px;height:52px;margin-bottom:20px}
+.sector-icon-wrap svg{width:52px;height:52px}
+.sector-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px}
+.sector-desc{font-size:13px;color:var(--muted);line-height:1.65}
 
-/* ─── CLIENTES ─── */
-.clientes{background:var(--ink)}
-.clients-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-top:52px}
-.client-box{background:var(--ink2);padding:24px 16px;display:flex;align-items:center;justify-content:center;text-align:center;min-height:80px;transition:background .2s}
-.client-box:hover{background:var(--ink3)}
-.client-name{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:800;color:var(--steel);text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
+/* CLIENTES */
+.clientes{background:var(--ink2)}
+.clients-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:52px}
+.client-box{background:var(--ink3);padding:28px 16px;display:flex;align-items:center;justify-content:center;text-align:center;min-height:88px;transition:background .2s}
+.client-box:hover{background:rgba(232,101,10,.08)}
+.client-name{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;color:var(--steel);text-transform:uppercase;letter-spacing:.06em;transition:color .2s}
 .client-box:hover .client-name{color:var(--orange)}
 .client-sector{display:block;font-size:10px;color:var(--muted);letter-spacing:.08em;margin-top:3px}
 
-/* ─── PLANTAS ─── */
-.plantas{background:var(--ink2)}
+/* PLANTAS */
+.plantas{background:var(--ink3)}
 .plantas-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:52px}
-.planta{background:var(--ink3);padding:52px 48px;position:relative;overflow:hidden}
-.planta-watermark{position:absolute;font-family:'Bebas Neue',sans-serif;font-size:160px;color:rgba(255,255,255,.025);top:-20px;right:-10px;line-height:1;pointer-events:none;letter-spacing:-.02em}
-.planta-tag{display:inline-block;background:var(--orange);color:var(--ink);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;margin-bottom:20px}
-.planta h3{font-family:'Bebas Neue',sans-serif;font-size:38px;letter-spacing:.03em;margin-bottom:10px}
-.planta-addr{color:var(--steel);font-size:14px;line-height:1.7;margin-bottom:24px}
-.planta-area{font-family:'Bebas Neue',sans-serif;font-size:64px;color:var(--orange);line-height:1}
-.planta-area small{font-family:'Barlow',sans-serif;font-size:14px;color:var(--muted);font-weight:400}
+.planta{overflow:hidden;position:relative}
+.planta-img{width:100%;height:260px;object-fit:cover;filter:brightness(.5) saturate(.6);transition:filter .4s;display:block}
+.planta:hover .planta-img{filter:brightness(.65) saturate(.8)}
+.planta-img-placeholder{width:100%;height:260px;background:var(--ink2);display:flex;align-items:center;justify-content:center}
+.planta-img-placeholder svg{width:64px;height:64px;opacity:.15}
+.planta-body{background:var(--ink2);padding:36px 40px 40px;position:relative}
+.planta-body::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--orange)}
+.planta-watermark{position:absolute;font-family:'Bebas Neue',sans-serif;font-size:120px;color:rgba(255,255,255,.025);top:-10px;right:16px;line-height:1;pointer-events:none}
+.planta-tag{display:inline-block;background:var(--orange);color:var(--ink);font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;margin-bottom:16px}
+.planta h3{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:.03em;margin-bottom:8px}
+.planta-addr{color:var(--steel);font-size:14px;line-height:1.7;margin-bottom:20px}
+.planta-area{font-family:'Bebas Neue',sans-serif;font-size:56px;color:var(--orange);line-height:1}
+.planta-area small{font-family:'Barlow',sans-serif;font-size:13px;color:var(--muted);font-weight:400}
 
-/* ─── CTA ─── */
-.cta-section{background:var(--orange);padding:88px 48px;text-align:center;position:relative;overflow:hidden}
-.cta-section::before{content:'CONTÁCTENOS';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:200px;color:rgba(0,0,0,.07);white-space:nowrap;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;letter-spacing:.02em}
+/* CTA */
+.cta-section{background:var(--orange);padding:96px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'PROHIDRAUT';position:absolute;font-family:'Bebas Neue',sans-serif;font-size:180px;color:rgba(0,0,0,.06);white-space:nowrap;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;letter-spacing:.04em}
 .cta-section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,7vw,96px);color:var(--ink);line-height:.95;margin-bottom:16px;position:relative}
-.cta-section p{color:rgba(10,21,32,.65);font-size:18px;margin-bottom:44px;max-width:480px;margin-left:auto;margin-right:auto;position:relative}
+.cta-section p{color:rgba(10,21,32,.6);font-size:18px;margin-bottom:44px;max-width:480px;margin-left:auto;margin-right:auto;position:relative}
 .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
 .btn-dark{background:var(--ink);color:var(--white);padding:16px 36px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;display:inline-flex;align-items:center;gap:10px;transition:transform .15s,background .2s}
 .btn-dark:hover{background:var(--ink2);transform:translateY(-2px)}
 .btn-outline{border:2px solid var(--ink);color:var(--ink);padding:14px 32px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:3px;transition:all .2s}
 .btn-outline:hover{background:var(--ink);color:var(--white);transform:translateY(-2px)}
 
-/* ─── FOOTER ─── */
+/* FOOTER */
 footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:52px}
 .footer-brand p{color:var(--muted);font-size:13px;line-height:1.8;margin-top:18px;max-width:280px}
 .footer-ruc{font-size:11px;color:rgba(255,255,255,.2);margin-top:12px;letter-spacing:.08em}
@@ -162,19 +189,21 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
 .foot-col a:hover{color:var(--orange)}
 .foot-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:28px;margin-top:40px;display:flex;justify-content:space-between;color:rgba(255,255,255,.18);font-size:11px;grid-column:1/-1;letter-spacing:.06em}
 
-/* ─── WHATSAPP FLOAT ─── */
-.wa-float{position:fixed;bottom:28px;right:28px;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 24px rgba(37,211,102,.35);z-index:999;transition:transform .2s,box-shadow .2s}
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:28px;right:28px;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 24px rgba(37,211,102,.35);z-index:999;transition:transform .2s,box-shadow .2s}
 .wa-float:hover{transform:scale(1.12);box-shadow:0 6px 32px rgba(37,211,102,.5)}
+.wa-float svg{width:28px;height:28px;fill:white}
 .wa-pulse{position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.4);animation:pulse 2s infinite}
 
-/* ─── ANIMATIONS ─── */
+/* ANIMATIONS */
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.15);opacity:0}}
 
-/* ─── RESPONSIVE ─── */
+/* RESPONSIVE */
 @media(max-width:1024px){
   .services-grid{grid-template-columns:repeat(2,1fr)}
   .sectores-grid,.clients-grid{grid-template-columns:repeat(2,1fr)}
+  .nosotros-grid{grid-template-columns:1fr;gap:40px}
   footer{grid-template-columns:1fr 1fr;gap:32px}
 }
 @media(max-width:768px){
@@ -183,8 +212,10 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
   section{padding:64px 24px}
   .plantas-grid,.prod-grid{grid-template-columns:1fr}
   .hero-stats{gap:28px}
-  .cert-strip{padding:16px 24px;gap:20px}
+  .cert-strip{padding:20px 24px;gap:24px;flex-direction:column;align-items:flex-start}
   footer{grid-template-columns:1fr;gap:28px;padding:40px 24px 24px}
+  .nosotros-fotos{grid-template-columns:1fr}
+  .nosotros-stats{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -192,101 +223,131 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
 
 <!-- TOPBAR -->
 <div class="topbar">
-  <span>📍 Ate, Parque Industrial — Lima, Perú</span>
+  <span>Ate, Parque Industrial — Lima, Peru — RUC: 20518623924</span>
   <div class="topbar-right">
     <span class="cert-pill">ISO 9001:2015</span>
     <span class="cert-pill">OHSAS 18001</span>
-    <a href="tel:+51981253238">📞 +51 981 253 238</a>
+    <a href="tel:+51981253238">+51 981 253 238</a>
   </div>
 </div>
 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <div class="logo-mark">
-      <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#ff7a20"/>
-            <stop offset="100%" stop-color="#c94e00"/>
-          </linearGradient>
-        </defs>
-        <!-- Triangle border -->
-        <polygon points="40,4 2,74 78,74" fill="url(#tg)"/>
-        <!-- Triangle fill -->
-        <polygon points="40,14 8,70 72,70" fill="#0a1520"/>
-        <!-- Diamond / gear shape center -->
-        <g transform="translate(40,48)">
-          <polygon points="0,-16 5,-8 13,-13 8,-5 16,-4 9,0 14,8 6,5 6,14 1,7 -4,16 -4,6 -12,10 -7,3 -15,1 -8,-4 -13,-12 -5,-8 -5,-18 0,-9" fill="url(#tg)"/>
-          <circle cx="0" cy="0" r="6.5" fill="url(#tg)"/>
-          <circle cx="0" cy="0" r="3.5" fill="#ffcc55"/>
-        </g>
-      </svg>
-    </div>
+    <svg width="40" height="40" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="og" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff7a20"/><stop offset="100%" stop-color="#c94e00"/></linearGradient></defs>
+      <polygon points="40,4 2,74 78,74" fill="url(#og)"/>
+      <polygon points="40,14 8,70 72,70" fill="#0a1520"/>
+      <g transform="translate(40,47)">
+        <circle cx="0" cy="0" r="14" fill="none" stroke="url(#og)" stroke-width="3"/>
+        <circle cx="0" cy="0" r="6" fill="url(#og)"/>
+        <line x1="0" y1="-14" x2="0" y2="-18" stroke="#e8650a" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="0" y1="14" x2="0" y2="18" stroke="#e8650a" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-14" y1="0" x2="-18" y2="0" stroke="#e8650a" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="14" y1="0" x2="18" y2="0" stroke="#e8650a" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="-9.9" y1="-9.9" x2="-12.7" y2="-12.7" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="9.9" y1="-9.9" x2="12.7" y2="-12.7" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="-9.9" y1="9.9" x2="-12.7" y2="12.7" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+        <line x1="9.9" y1="9.9" x2="12.7" y2="12.7" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </svg>
     <div class="nav-brand">
-      <strong>PROHIDRAUT</strong>
-      <span>Proyectos Hidráulico y Automáticos S.A.</span>
+      <strong>PROHIDRAUT S.A.</strong>
+      <span>Proyectos Hidraulico y Automaticos</span>
     </div>
   </a>
   <div class="nav-links">
+    <a href="#nosotros">Nosotros</a>
     <a href="#servicios">Servicios</a>
     <a href="#productos">Productos</a>
     <a href="#clientes">Clientes</a>
     <a href="#plantas">Plantas</a>
-    <a href="https://wa.me/51981253238" class="nav-wa">💬 Cotizar</a>
+    <a href="https://wa.me/51981253238" class="nav-wa">Cotizar ahora</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid-overlay"></div>
-  <div class="hero-glow"></div>
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">
       <div class="hero-eyebrow-line"></div>
-      <span>Especialistas en hidráulica industrial desde 2008</span>
+      <span>Especialistas en hidraulica industrial desde 2008</span>
     </div>
     <h1>
-      REPARACIÓN<br>
-      <span class="outline">&amp; FABRICACIÓN</span><br>
-      HIDRÁULICA
+      REPARACION<br>
+      <span class="outline">FABRICACION</span>
+      HIDRAULICA
     </h1>
     <p class="hero-sub">
-      Socios estratégicos de la <strong>minería peruana</strong>. Cilindros HP400/HP500, unidades de presión, acumuladores y fabricación a medida. <strong>Certificación ISO 9001 + OHSAS 18001 activa.</strong>
+      Socios estrategicos de la <strong>mineria peruana</strong>. Cilindros HP400/HP500, unidades de presion, acumuladores y fabricacion a medida. <strong>Certificacion ISO 9001 + OHSAS 18001 activa.</strong>
     </p>
     <div class="hero-ctas">
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n" class="btn-primary">💬 Cotizar ahora</a>
-      <a href="#servicios" class="btn-ghost">Ver servicios ↓</a>
+      <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20una%20cotizacion" class="btn-primary">Cotizar por WhatsApp</a>
+      <a href="#servicios" class="btn-ghost">Ver servicios</a>
     </div>
     <div class="hero-stats">
-      <div>
-        <div class="stat-val">17<span>+</span></div>
-        <div class="stat-lbl">Años en operación</div>
-      </div>
-      <div>
-        <div class="stat-val">2</div>
-        <div class="stat-lbl">Plantas propias</div>
-      </div>
-      <div>
-        <div class="stat-val">14<span>+</span></div>
-        <div class="stat-lbl">Clientes corporativos</div>
-      </div>
-      <div>
-        <div class="stat-val">2</div>
-        <div class="stat-lbl">Certificaciones</div>
-      </div>
+      <div><div class="stat-val">17<span>+</span></div><div class="stat-lbl">Anos de experiencia</div></div>
+      <div><div class="stat-val">2</div><div class="stat-lbl">Plantas propias</div></div>
+      <div><div class="stat-val">14<span>+</span></div><div class="stat-lbl">Clientes corporativos</div></div>
+      <div><div class="stat-val">2</div><div class="stat-lbl">Certificaciones</div></div>
     </div>
   </div>
 </section>
 
 <!-- CERT STRIP -->
 <div class="cert-strip">
-  <div class="cert-item"><span class="cert-icon">🏆</span> ISO 9001:2015 — Gestión de Calidad</div>
-  <div class="cert-item"><span class="cert-icon">🛡️</span> OHSAS 18001 — Seguridad Ocupacional</div>
-  <div class="cert-item"><span class="cert-icon">✅</span> Certificado LSQA · IQNet · Quality Austria</div>
-  <div class="cert-item"><span class="cert-icon">🏭</span> RUC: 20518623924</div>
+  <div class="cert-item">
+    <svg class="cert-logo" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg"><rect width="120" height="40" fill="none"/><text x="4" y="28" font-family="Arial" font-weight="bold" font-size="22" fill="white">LSQA</text></svg>
+    <div class="cert-text">Certificado LSQA<small>Sistema de Gestion</small></div>
+  </div>
+  <div class="cert-divider"></div>
+  <div class="cert-item">
+    <svg class="cert-logo" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="40" fill="none"/><text x="4" y="28" font-family="Arial" font-weight="bold" font-size="18" fill="white">IQNet</text></svg>
+    <div class="cert-text">IQNet Certified<small>International Network</small></div>
+  </div>
+  <div class="cert-divider"></div>
+  <div class="cert-item">
+    <svg class="cert-logo" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg"><rect width="160" height="40" fill="none"/><text x="4" y="28" font-family="Arial" font-weight="bold" font-size="14" fill="white">Quality Austria</text></svg>
+    <div class="cert-text">ISO 9001:2015<small>Sistema Certificado</small></div>
+  </div>
+  <div class="cert-divider"></div>
+  <div class="cert-item">
+    <div class="cert-text">OHSAS 18001<small>Seguridad Ocupacional</small></div>
+  </div>
 </div>
+
+<!-- NOSOTROS -->
+<section class="nosotros" id="nosotros">
+  <div class="eyebrow">Quienes somos</div>
+  <h2 class="section-title">INGENIERIA<br>DE PRECISION</h2>
+  <div class="nosotros-grid">
+    <div class="nosotros-text">
+      <p>Fundada en <strong>2008</strong>, PROHIDRAUT S.A. nacio de la experiencia tecnica de profesionales especializados en hidraulica industrial. Hoy somos reconocidos como socios estrategicos de empresas lideres en mineria, construccion y manufactura a nivel nacional.</p>
+      <p>Contamos con capacidad para <strong>fabricar y reparar cilindros hidraulicos de alta complejidad</strong>: chancadoras de mineral HP400/HP500, linea amarilla CAT, Volvo y Komatsu, filtros prensa, unidades de presion y lubricacion.</p>
+      <p>Nuestra doble certificacion <strong>ISO 9001:2015 y OHSAS 18001</strong> garantiza calidad y seguridad en cada proyecto. Operamos desde dos plantas propias en Lima con mas de 1,400 m2 de area operativa total.</p>
+      <div class="nosotros-stats">
+        <div class="nost-stat"><div class="num">2008</div><div class="lbl">Fundacion</div></div>
+        <div class="nost-stat"><div class="num">ISO</div><div class="lbl">9001:2015 activa</div></div>
+        <div class="nost-stat"><div class="num">1,400</div><div class="lbl">M2 de planta</div></div>
+        <div class="nost-stat"><div class="num">HP500</div><div class="lbl">Capacidad max.</div></div>
+      </div>
+    </div>
+    <div class="nosotros-fotos">
+      <div class="nosotros-foto grande">
+        <img src="nosotros1.jpg" alt="Equipo Prohidraut trabajando" onerror="this.style.display='none'">
+      </div>
+      <div class="nosotros-foto">
+        <img src="nosotros2.jpg" alt="Taller Prohidraut" onerror="this.style.display='none'">
+      </div>
+      <div class="nosotros-foto">
+        <img src="nosotros3.jpg" alt="Proceso de fabricacion" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- SERVICIOS -->
 <section class="servicios" id="servicios">
@@ -295,127 +356,139 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
       <div class="eyebrow">Lo que hacemos</div>
       <h2 class="section-title">SERVICIOS<br>ESPECIALIZADOS</h2>
     </div>
-    <p class="section-sub">Reparación y fabricación de componentes críticos para chancadoras y maquinaria industrial. Diagnóstico técnico, garantía de calidad y entrega a tiempo.</p>
+    <p class="section-sub">Reparacion y fabricacion de componentes criticos para chancadoras y maquinaria industrial. Diagnostico tecnico, garantia de calidad y entrega a tiempo.</p>
   </div>
   <div class="services-grid">
 
     <div class="srv-card">
-      <img src="cilindros_hp400.jpg" alt="Reparación cilindros HP400" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">⚙️</div>
+      <div class="srv-img-wrap">
+        <img src="servicio1.jpg" alt="Reparacion cilindros HP400" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><path d=\'M12 6v6l4 2\'/></svg></div>'">
+        <div class="srv-num-badge">01</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">01</div>
-        <div class="srv-title">Reparación Cilindros HP400</div>
-        <div class="srv-desc">Reparación completa de cilindros hidráulicos para chancadoras Symons HP400. Diagnóstico, rectificado y sellado con garantía.</div>
+        <div class="srv-title">Reparacion Cilindros HP400</div>
+        <div class="srv-desc">Reparacion completa de cilindros hidraulicos para chancadoras Symons HP400. Diagnostico, rectificado y sellado con garantia.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="repacumuladores.jpg" alt="Recarga acumuladores" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🔧</div>
+      <div class="srv-img-wrap">
+        <img src="servicio2.jpg" alt="Recarga acumuladores" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">02</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">02</div>
         <div class="srv-title">Recarga de Acumuladores</div>
-        <div class="srv-desc">Recarga y mantenimiento de acumuladores hidráulicos. Servicio para chancadoras HP400 y HP500.</div>
+        <div class="srv-desc">Recarga y mantenimiento de acumuladores hidraulicos HP400 y HP500. Control de presion y pruebas de hermeticidad.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="jp400.jpg" alt="Reparación cilindros HP500" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">⚙️</div>
+      <div class="srv-img-wrap">
+        <img src="servicio3.jpg" alt="Reparacion cilindros HP500" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">03</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">03</div>
-        <div class="srv-title">Reparación Cilindros HP500</div>
-        <div class="srv-desc">Reparación especializada de cilindros de alta presión para chancadoras HP500. Tolerancias de precisión garantizadas.</div>
+        <div class="srv-title">Reparacion Cilindros HP500</div>
+        <div class="srv-desc">Reparacion especializada de cilindros de alta presion para chancadoras HP500. Tolerancias de precision garantizadas.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="reparacion_de_cilindro.jpg" alt="Reparación acumuladores HP500" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🔩</div>
+      <div class="srv-img-wrap">
+        <img src="servicio4.jpg" alt="Fabricacion unidad hidraulica" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">04</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">04</div>
-        <div class="srv-title">Reparación Acumuladores HP500</div>
-        <div class="srv-desc">Servicio integral de reparación y recarga de acumuladores HP500. Control de presión y pruebas de hermeticidad.</div>
+        <div class="srv-title">Fabricacion Unidad Hidraulica</div>
+        <div class="srv-desc">Diseno y fabricacion de unidades hidraulicas de presion a medida. Motor, bomba, manifold y tablero de control integrado.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="fabriacion_unidad_presion.jpg" alt="Fabricación unidad hidráulica" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🏗️</div>
+      <div class="srv-img-wrap">
+        <img src="servicio5.jpg" alt="Fabricacion cilindro giro bowl" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">05</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">05</div>
-        <div class="srv-title">Fabricación Unidad Hidráulica</div>
-        <div class="srv-desc">Diseño y fabricación de unidades hidráulicas de presión a medida. Motor, bomba, manifold y tablero de control integrado.</div>
+        <div class="srv-title">Fabricacion Cilindro Giro de Bowl</div>
+        <div class="srv-desc">Fabricacion de cilindros de giro de bowl para chancadoras. Mecanizado de precision en torno convencional y CNC.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="fabricacion_cilindro_de_giro.jpg" alt="Fabricación cilindro de giro" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🏭</div>
+      <div class="srv-img-wrap">
+        <img src="servicio6.jpg" alt="Reparacion cilindros clamping" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">06</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">06</div>
-        <div class="srv-title">Fabricación Cilindro Giro de Bowl</div>
-        <div class="srv-desc">Fabricación de cilindros de giro de bowl para chancadoras. Mecanizado de precisión en torno CNC y convencional.</div>
+        <div class="srv-title">Reparacion Cilindros Clamping</div>
+        <div class="srv-desc">Reparacion de cilindros de clamping para chancadoras de cono. Rectificado de camisas y reemplazo de sellos de alta presion.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="fabricacion_cilindro.jpg" alt="Reparación cilindros clamping" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">⚙️</div>
+      <div class="srv-img-wrap">
+        <img src="servicio7.jpg" alt="Reparacion motoreductor" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">07</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">07</div>
-        <div class="srv-title">Reparación Cilindros Clamping</div>
-        <div class="srv-desc">Reparación de cilindros de clamping para chancadoras de cono. Rectificado de camisas y reemplazo de sellos de alta presión.</div>
+        <div class="srv-title">Reparacion Motoreductor Bowl</div>
+        <div class="srv-desc">Reparacion de motoreductores de giro de bowl. Cambio de rodamientos, sellos y ajuste de holguras.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="reparacion_de_moto.jpg" alt="Reparación motoreductor" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">⚡</div>
+      <div class="srv-img-wrap">
+        <img src="servicio8.jpg" alt="Unidades Allis Chalmers" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">08</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">08</div>
-        <div class="srv-title">Reparación Motoreductor Bowl</div>
-        <div class="srv-desc">Reparación de motoreductores de giro de bowl. Cambio de rodamientos, sellos y ajuste de holguras.</div>
+        <div class="srv-title">Unidades Allis Chalmers 5 1/2</div>
+        <div class="srv-desc">Fabricacion y diseno de unidades hidraulicas de presion para chancadoras Allis Chalmers 5 1/2. Ingenieria completa.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="diseño_unidad.jpg" alt="Diseño unidades Allis Chalmers" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">📐</div>
+      <div class="srv-img-wrap">
+        <img src="servicio9.jpg" alt="Mecanizado de precision" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">09</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">09</div>
-        <div class="srv-title">Unidades Allis Chalmers 5½</div>
-        <div class="srv-desc">Fabricación y diseño de unidades hidráulicas de presión para chancadoras Allis Chalmers 5½. Ingeniería completa desde planos.</div>
+        <div class="srv-title">Mecanizado de Precision</div>
+        <div class="srv-desc">Torneado, rectificado y cromado de barras y vastagos. Tolerancias industriales para componentes de alta exigencia.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="33.jpeg" alt="Reparación cilindro giro bowl" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🔧</div>
+      <div class="srv-img-wrap">
+        <img src="servicio10.jpg" alt="Reparacion chancadoras" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">10</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">10</div>
-        <div class="srv-title">Reparación Cilindro Giro de Bowl</div>
-        <div class="srv-desc">Reparación de cilindros de giro de bowl en campo o en taller. Diagnóstico en sitio disponible para clientes mineros.</div>
+        <div class="srv-title">Reparacion de Chancadoras</div>
+        <div class="srv-desc">Servicio integral de reparacion de chancadoras CAT, Komatsu y Volvo. Diagnostico en sitio disponible para clientes mineros.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="15.jpeg" alt="Mecanizado de precisión" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🏭</div>
+      <div class="srv-img-wrap">
+        <img src="servicio11.jpg" alt="Cilindros transporte e industria" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">11</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">11</div>
-        <div class="srv-title">Mecanizado de Precisión</div>
-        <div class="srv-desc">Torneado, rectificado y cromado de barras y vástagos. Tolerancias industriales para componentes de alta exigencia.</div>
+        <div class="srv-title">Cilindros Transporte e Industria</div>
+        <div class="srv-desc">Reparacion y fabricacion de cilindros para volquetes, gruas, montacargas, prensas y maquinaria agroindustrial.</div>
       </div>
     </div>
 
     <div class="srv-card">
-      <img src="36.jpeg" alt="Reparación todo tipo cilindros" class="srv-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="srv-placeholder" style="display:none">🚛</div>
+      <div class="srv-img-wrap">
+        <img src="servicio12.jpg" alt="Automatizacion industrial" class="srv-img" onerror="this.parentElement.innerHTML='<div class=srv-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'white\'><circle cx=\'12\' cy=\'12\' r=\'10\'/></svg></div>'">
+        <div class="srv-num-badge">12</div>
+      </div>
       <div class="srv-body">
-        <div class="srv-num">12</div>
-        <div class="srv-title">Cilindros para Transporte e Industria</div>
-        <div class="srv-desc">Reparación y fabricación de todo tipo de cilindro hidráulico: volquetes, grúas, montacargas, prensas y maquinaria agroindustrial.</div>
+        <div class="srv-title">Automatizacion Industrial</div>
+        <div class="srv-desc">Soluciones de control industrial y oleo-hidraulica mecanica. Implementacion de logica de control para maquinaria industrial.</div>
       </div>
     </div>
 
@@ -426,82 +499,83 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
 <section class="productos" id="productos">
   <div class="prod-head">
     <div>
-      <div class="eyebrow">Catálogo</div>
+      <div class="eyebrow">Catalogo</div>
       <h2 class="section-title">PRODUCTOS<br>EN STOCK</h2>
     </div>
-    <p class="section-sub">Contamos con stock permanente de insumos y componentes hidráulicos. Atención inmediata y despacho rápido desde Ate, Lima.</p>
+    <p class="section-sub">Stock permanente de insumos y componentes hidraulicos. Atencion inmediata y despacho rapido desde Ate, Lima.</p>
   </div>
   <div class="prod-grid">
 
     <div class="prod-card">
-      <div class="prod-icon">🔵</div>
-      <div class="prod-name">Sellos Hidráulicos</div>
-      <div class="prod-desc">Sellos en medidas pulgadas y milimétricas para todo tipo de cilindro hidráulico. Alta resistencia a presión y temperatura.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">En pulgadas</span>
-        <span class="spec-tag">Milimétricas</span>
-        <span class="spec-tag">Stock inmediato</span>
+      <div class="prod-img-wrap">
+        <img src="producto1.jpg" alt="Sellos hidraulicos" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><circle cx=\'12\' cy=\'12\' r=\'5\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20sellos%20hidr%C3%A1ulicos" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Sellos Hidraulicos</div>
+        <div class="prod-desc">Sellos en medidas pulgadas y milimetricas para todo tipo de cilindro. Alta resistencia a presion y temperatura.</div>
+        <div class="prod-specs"><span class="spec-tag">En pulgadas</span><span class="spec-tag">Milimetricas</span><span class="spec-tag">Stock inmediato</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20sellos%20hidraulicos" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
     <div class="prod-card">
-      <div class="prod-icon">⬛</div>
-      <div class="prod-name">Barras Cromadas</div>
-      <div class="prod-desc">Barras de acero cromado duro para vástagos de cilindros. Alta dureza superficial y acabado espejo.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">1½"</span><span class="spec-tag">1¾"</span><span class="spec-tag">2"</span>
-        <span class="spec-tag">2½"</span><span class="spec-tag">3"</span><span class="spec-tag">3½"</span>
+      <div class="prod-img-wrap">
+        <img src="producto2.jpg" alt="Barras cromadas" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><line x1=\'2\' y1=\'12\' x2=\'22\' y2=\'12\'/><line x1=\'2\' y1=\'8\' x2=\'22\' y2=\'8\'/><line x1=\'2\' y1=\'16\' x2=\'22\' y2=\'16\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20barras%20cromadas" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Barras Cromadas</div>
+        <div class="prod-desc">Barras de acero cromado duro para vastagos. Alta dureza superficial y acabado espejo.</div>
+        <div class="prod-specs"><span class="spec-tag">1 1/2"</span><span class="spec-tag">1 3/4"</span><span class="spec-tag">2"</span><span class="spec-tag">2 1/2"</span><span class="spec-tag">3"</span><span class="spec-tag">3 1/2"</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20barras%20cromadas" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
     <div class="prod-card">
-      <div class="prod-icon">⭕</div>
-      <div class="prod-name">Tubos Bruñidos</div>
-      <div class="prod-desc">Tubos de acero bruñido para camisas de cilindros hidráulicos. Acabado interior de alta precisión para reducir desgaste.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">4¼-3"</span><span class="spec-tag">4¾-4"</span><span class="spec-tag">8-7"</span>
-        <span class="spec-tag">120-100</span><span class="spec-tag">135-110</span><span class="spec-tag">230-200</span>
+      <div class="prod-img-wrap">
+        <img src="producto3.jpg" alt="Tubos brunidos" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><circle cx=\'12\' cy=\'12\' r=\'9\'/><circle cx=\'12\' cy=\'12\' r=\'5\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20tubos%20bru%C3%B1idos" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Tubos Brunidos</div>
+        <div class="prod-desc">Tubos de acero brunido para camisas de cilindros. Acabado interior de alta precision para reducir desgaste.</div>
+        <div class="prod-specs"><span class="spec-tag">4 1/4-3"</span><span class="spec-tag">120-100</span><span class="spec-tag">135-110</span><span class="spec-tag">230-200</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20tubos%20brunidos" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
     <div class="prod-card">
-      <div class="prod-icon">🔵</div>
-      <div class="prod-name">Bombas · Motor · Orbitrol</div>
-      <div class="prod-desc">Bombas de paletas V10 y V20, motores hidráulicos y orbitrol con válvula incorporada para maquinaria industrial y vehículos.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">Bomba V10</span>
-        <span class="spec-tag">Bomba V20</span>
-        <span class="spec-tag">Motor hidráulico</span>
-        <span class="spec-tag">Orbitrol c/válvula</span>
+      <div class="prod-img-wrap">
+        <img src="producto4.jpg" alt="Bombas motores orbitrol" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><circle cx=\'12\' cy=\'12\' r=\'9\'/><path d=\'M12 8v4l3 3\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20bombas%20o%20motores%20hidr%C3%A1ulicos" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Bombas / Motor / Orbitrol</div>
+        <div class="prod-desc">Bombas de paletas V10 y V20, motores hidraulicos y orbitrol con valvula incorporada.</div>
+        <div class="prod-specs"><span class="spec-tag">Bomba V10</span><span class="spec-tag">Bomba V20</span><span class="spec-tag">Motor hidraulico</span><span class="spec-tag">Orbitrol</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20bombas%20hidraulicas" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
     <div class="prod-card">
-      <div class="prod-icon">❄️</div>
-      <div class="prod-name">Sistema Enfriamiento Hidráulico</div>
-      <div class="prod-desc">Radiadores de aceite hidráulico con ventilador eléctrico. Garantía de 1 año. Envío a todo el Perú.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">Garantía 1 año</span>
-        <span class="spec-tag">Envío gratis</span>
-        <span class="spec-tag">Stock disponible</span>
+      <div class="prod-img-wrap">
+        <img src="producto5.jpg" alt="Sistema enfriamiento hidraulico" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><path d=\'M12 8v8M8 12h8\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20sistema%20de%20enfriamiento" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Enfriamiento Hidraulico</div>
+        <div class="prod-desc">Radiadores de aceite hidraulico con ventilador electrico. Garantia de 1 ano. Envio a todo el Peru.</div>
+        <div class="prod-specs"><span class="spec-tag">Garantia 1 ano</span><span class="spec-tag">Envio gratis</span><span class="spec-tag">Stock disponible</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20sistema%20de%20enfriamiento" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
     <div class="prod-card">
-      <div class="prod-icon">🔩</div>
-      <div class="prod-name">Prensadora de Mangueras</div>
-      <div class="prod-desc">Prensadora hidráulica de mangueras con 10 juegos de troqueles. Ideal para talleres y empresas de mantenimiento industrial.</div>
-      <div class="prod-specs">
-        <span class="spec-tag">10 troqueles</span>
-        <span class="spec-tag">Alta presión</span>
-        <span class="spec-tag">Uso industrial</span>
+      <div class="prod-img-wrap">
+        <img src="producto6.jpg" alt="Prensadora de mangueras" class="prod-img" onerror="this.parentElement.innerHTML='<div class=prod-img-placeholder><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(255,255,255,0.15)\' stroke-width=\'1\'><rect x=\'4\' y=\'4\' width=\'16\' height=\'16\' rx=\'2\'/><circle cx=\'12\' cy=\'12\' r=\'4\'/></svg></div>'">
       </div>
-      <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20informaci%C3%B3n%20de%20la%20prensadora" class="prod-wa">💬 Consultar</a>
+      <div class="prod-body">
+        <div class="prod-name">Prensadora de Mangueras</div>
+        <div class="prod-desc">Prensadora hidraulica con 10 juegos de troqueles. Ideal para talleres y empresas de mantenimiento.</div>
+        <div class="prod-specs"><span class="spec-tag">10 troqueles</span><span class="spec-tag">Alta presion</span><span class="spec-tag">Uso industrial</span></div>
+        <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20la%20prensadora%20de%20mangueras" class="prod-wa">Consultar precio</a>
+      </div>
     </div>
 
   </div>
@@ -509,49 +583,83 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
 
 <!-- SECTORES -->
 <section class="sectores">
-  <div class="eyebrow">A quién servimos</div>
+  <div class="eyebrow">A quien servimos</div>
   <h2 class="section-title">SECTORES<br>QUE ATENDEMOS</h2>
   <div class="sectores-grid">
     <div class="sector-card">
-      <div class="sector-icon">⛏️</div>
-      <div class="sector-name">Minería</div>
-      <div class="sector-desc">Chancadoras, trituradoras, unidades de lubricación y presión para operaciones mineras de gran escala.</div>
+      <div class="sector-icon-wrap">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26 4L4 20v28h44V20L26 4z" stroke="#e8650a" stroke-width="2" fill="rgba(232,101,10,0.08)"/>
+          <rect x="18" y="32" width="16" height="16" fill="rgba(232,101,10,0.15)" stroke="#e8650a" stroke-width="1.5"/>
+          <line x1="26" y1="12" x2="26" y2="22" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="sector-name">Mineria</div>
+      <div class="sector-desc">Chancadoras, trituradoras, unidades de lubricacion y presion para operaciones mineras de gran escala.</div>
     </div>
     <div class="sector-card">
-      <div class="sector-icon">🏗️</div>
-      <div class="sector-name">Construcción</div>
-      <div class="sector-desc">Cilindros para maquinaria pesada, excavadoras, grúas y equipos de movimiento de tierra.</div>
+      <div class="sector-icon-wrap">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="28" width="40" height="18" fill="rgba(232,101,10,0.08)" stroke="#e8650a" stroke-width="2"/>
+          <rect x="14" y="16" width="24" height="12" fill="rgba(232,101,10,0.06)" stroke="#e8650a" stroke-width="1.5"/>
+          <rect x="20" y="6" width="12" height="10" fill="rgba(232,101,10,0.06)" stroke="#e8650a" stroke-width="1.5"/>
+          <line x1="2" y1="46" x2="50" y2="46" stroke="#e8650a" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="sector-name">Construccion</div>
+      <div class="sector-desc">Cilindros para maquinaria pesada, excavadoras, gruas y equipos de movimiento de tierra.</div>
     </div>
     <div class="sector-card">
-      <div class="sector-icon">🚛</div>
+      <div class="sector-icon-wrap">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="20" width="42" height="20" rx="4" fill="rgba(232,101,10,0.08)" stroke="#e8650a" stroke-width="2"/>
+          <rect x="36" y="14" width="12" height="26" rx="2" fill="rgba(232,101,10,0.08)" stroke="#e8650a" stroke-width="1.5"/>
+          <circle cx="12" cy="42" r="5" fill="rgba(232,101,10,0.15)" stroke="#e8650a" stroke-width="2"/>
+          <circle cx="30" cy="42" r="5" fill="rgba(232,101,10,0.15)" stroke="#e8650a" stroke-width="2"/>
+        </svg>
+      </div>
       <div class="sector-name">Transporte</div>
-      <div class="sector-desc">Reparación de cilindros para volquetes, camiones grúa, semirremolques y flota pesada.</div>
+      <div class="sector-desc">Reparacion de cilindros para volquetes, camiones grua, semirremolques y flota pesada.</div>
     </div>
     <div class="sector-card">
-      <div class="sector-icon">🏭</div>
+      <div class="sector-icon-wrap">
+        <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26" cy="26" r="18" stroke="#e8650a" stroke-width="2" fill="rgba(232,101,10,0.08)"/>
+          <circle cx="26" cy="26" r="8" stroke="#e8650a" stroke-width="1.5" fill="rgba(232,101,10,0.12)"/>
+          <line x1="26" y1="8" x2="26" y2="18" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="26" y1="34" x2="26" y2="44" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="8" y1="26" x2="18" y2="26" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="34" y1="26" x2="44" y2="26" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
       <div class="sector-name">Industria General</div>
-      <div class="sector-desc">Prensas hidráulicas, líneas de producción, agroindustria y cualquier sistema que use hidráulica.</div>
+      <div class="sector-desc">Prensas hidraulicas, lineas de produccion, agroindustria y cualquier sistema que use hidraulica.</div>
     </div>
   </div>
 </section>
 
 <!-- CLIENTES -->
 <section class="clientes" id="clientes">
-  <div class="eyebrow">Confían en nosotros</div>
+  <div class="eyebrow">Confian en nosotros</div>
   <h2 class="section-title">CLIENTES<br>CORPORATIVOS</h2>
   <div class="clients-grid">
-    <div class="client-box"><div><div class="client-name">Barrick</div><span class="client-sector">Minería</span></div></div>
-    <div class="client-box"><div><div class="client-name">Volcán</div><span class="client-sector">Minería</span></div></div>
+    <div class="client-box"><div><div class="client-name">Barrick</div><span class="client-sector">Mineria</span></div></div>
+    <div class="client-box"><div><div class="client-name">Volcan</div><span class="client-sector">Mineria</span></div></div>
     <div class="client-box"><div><div class="client-name">Harsco</div><span class="client-sector">Metals & Minerals</span></div></div>
-    <div class="client-box"><div><div class="client-name">El Brocal</div><span class="client-sector">Minería</span></div></div>
-    <div class="client-box"><div><div class="client-name">Lincuna</div><span class="client-sector">Cía. Minera</span></div></div>
-    <div class="client-box"><div><div class="client-name">ICCGSA</div><span class="client-sector">Construcción</span></div></div>
-    <div class="client-box"><div><div class="client-name">Cosapi</div><span class="client-sector">Ingeniería</span></div></div>
+    <div class="client-box"><div><div class="client-name">El Brocal</div><span class="client-sector">Mineria</span></div></div>
+    <div class="client-box"><div><div class="client-name">Lincuna</div><span class="client-sector">Cia. Minera</span></div></div>
+    <div class="client-box"><div><div class="client-name">ICCGSA</div><span class="client-sector">Construccion</span></div></div>
+    <div class="client-box"><div><div class="client-name">Cosapi</div><span class="client-sector">Ingenieria</span></div></div>
     <div class="client-box"><div><div class="client-name">Aceros Arequipa</div><span class="client-sector">Manufactura</span></div></div>
     <div class="client-box"><div><div class="client-name">SSK Sigdo Koppers</div><span class="client-sector">Industrial</span></div></div>
-    <div class="client-box"><div><div class="client-name">Talma</div><span class="client-sector">Servicios</span></div></div>
-    <div class="client-box"><div><div class="client-name">Swissport</div><span class="client-sector">Logística</span></div></div>
+    <div class="client-box"><div><div class="client-name">Talma</div><span class="client-sector">Servicios Aeroportuarios</span></div></div>
+    <div class="client-box"><div><div class="client-name">Swissport</div><span class="client-sector">Logistica</span></div></div>
     <div class="client-box"><div><div class="client-name">Cana Dyne</div><span class="client-sector">Equipment</span></div></div>
+    <div class="client-box"><div><div class="client-name">Kimberly Clark</div><span class="client-sector">Manufactura</span></div></div>
+    <div class="client-box"><div><div class="client-name">Bradken</div><span class="client-sector">Mineria Industrial</span></div></div>
+    <div class="client-box"><div><div class="client-name">Precor</div><span class="client-sector">Industrial</span></div></div>
+    <div class="client-box"><div><div class="client-name">Galen</div><span class="client-sector">Industrial</span></div></div>
+    <div class="client-box"><div><div class="client-name">Lining</div><span class="client-sector">Industrial</span></div></div>
     <div class="client-box"><div><div class="client-name">Anita</div><span class="client-sector">Industrial</span></div></div>
     <div class="client-box"><div><div class="client-name">+ clientes</div><span class="client-sector">Varios sectores</span></div></div>
   </div>
@@ -563,29 +671,35 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
   <h2 class="section-title">DOS PLANTAS,<br>CAPACIDAD TOTAL</h2>
   <div class="plantas-grid">
     <div class="planta">
-      <div class="planta-watermark">01</div>
-      <div class="planta-tag">Sede Principal</div>
-      <h3>Ate — Parque Industrial</h3>
-      <p class="planta-addr">Calle 3 Mz. "L" Lt. 22, Parque Industrial El Asesor<br>Ate, Lima — Planta operativa con taller completo</p>
-      <div class="planta-area">200 <small>m² operativos</small></div>
+      <img src="planta1.jpg" alt="Planta Ate" class="planta-img" onerror="this.style.display='none'">
+      <div class="planta-body">
+        <div class="planta-watermark">01</div>
+        <div class="planta-tag">Sede Principal</div>
+        <h3>Ate — Parque Industrial</h3>
+        <p class="planta-addr">Calle 3 Mz. "L" Lt. 22, Parque Industrial El Asesor<br>Ate, Lima — Taller completo de reparacion y fabricacion</p>
+        <div class="planta-area">200 <small>m2 operativos</small></div>
+      </div>
     </div>
     <div class="planta">
-      <div class="planta-watermark">02</div>
-      <div class="planta-tag">Planta de Producción</div>
-      <h3>Cieneguilla</h3>
-      <p class="planta-addr">Av. Las Tunas Parcela 108 Lt. 06<br>Santa Rosa de Collanac, Cieneguilla — Producción a gran escala</p>
-      <div class="planta-area">1,200 <small>m² operativos</small></div>
+      <img src="planta2.jpg" alt="Planta Cieneguilla" class="planta-img" onerror="this.style.display='none'">
+      <div class="planta-body">
+        <div class="planta-watermark">02</div>
+        <div class="planta-tag">Planta de Produccion</div>
+        <h3>Cieneguilla</h3>
+        <p class="planta-addr">Av. Las Tunas Parcela 108 Lt. 06<br>Santa Rosa de Collanac, Cieneguilla — Produccion a gran escala</p>
+        <div class="planta-area">1,200 <small>m2 operativos</small></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="cta-section" id="contacto">
-  <h2>¿NECESITA<br>UNA COTIZACIÓN?</h2>
-  <p>Respuesta en menos de 2 horas. Atendemos Lima y todo el Perú.</p>
+  <h2>NECESITA<br>UNA COTIZACION?</h2>
+  <p>Respuesta en menos de 2 horas. Atendemos Lima y todo el Peru.</p>
   <div class="cta-btns">
-    <a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20de%20servicio%20hidr%C3%A1ulico" class="btn-dark">💬 WhatsApp +51 981 253 238</a>
-    <a href="mailto:humberto.charri@prohidraut.com" class="btn-outline">✉️ humberto.charri@prohidraut.com</a>
+    <a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20una%20cotizacion" class="btn-dark">WhatsApp +51 981 253 238</a>
+    <a href="mailto:humberto.charri@prohidraut.com" class="btn-outline">humberto.charri@prohidraut.com</a>
   </div>
 </section>
 
@@ -593,45 +707,45 @@ footer{background:#060e17;padding:60px 48px 32px;display:grid;grid-template-colu
 <footer>
   <div class="footer-brand">
     <div style="display:flex;align-items:center;gap:12px">
-      <svg width="36" height="36" viewBox="0 0 80 80"><defs><linearGradient id="tg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff7a20"/><stop offset="100%" stop-color="#c94e00"/></linearGradient></defs><polygon points="40,4 2,74 78,74" fill="url(#tg2)"/><polygon points="40,14 8,70 72,70" fill="#060e17"/><g transform="translate(40,48)"><polygon points="0,-16 5,-8 13,-13 8,-5 16,-4 9,0 14,8 6,5 6,14 1,7 -4,16 -4,6 -12,10 -7,3 -15,1 -8,-4 -13,-12 -5,-8 -5,-18 0,-9" fill="url(#tg2)"/><circle cx="0" cy="0" r="6" fill="url(#tg2)"/><circle cx="0" cy="0" r="3" fill="#ffcc55"/></g></svg>
+      <svg width="36" height="36" viewBox="0 0 80 80"><defs><linearGradient id="og2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff7a20"/><stop offset="100%" stop-color="#c94e00"/></linearGradient></defs><polygon points="40,4 2,74 78,74" fill="url(#og2)"/><polygon points="40,14 8,70 72,70" fill="#060e17"/><g transform="translate(40,47)"><circle cx="0" cy="0" r="12" fill="none" stroke="url(#og2)" stroke-width="2.5"/><circle cx="0" cy="0" r="5" fill="url(#og2)"/><line x1="0" y1="-12" x2="0" y2="-16" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/><line x1="0" y1="12" x2="0" y2="16" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/><line x1="-12" y1="0" x2="-16" y2="0" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="0" x2="16" y2="0" stroke="#e8650a" stroke-width="2" stroke-linecap="round"/></g></svg>
       <div style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.06em">PROHIDRAUT S.A.</div>
     </div>
-    <p>Empresa especializada en reparación y fabricación de sistemas hidráulicos industriales desde 2008. Proveedor certificado de las principales mineras del Perú.</p>
+    <p>Empresa especializada en reparacion y fabricacion de sistemas hidraulicos industriales desde 2008. Proveedor certificado ISO 9001 de las principales mineras del Peru.</p>
     <p class="footer-ruc">RUC: 20518623924</p>
   </div>
   <div class="foot-col">
     <h4>Servicios</h4>
-    <a href="#servicios">Reparación Cilindros HP400/500</a>
-    <a href="#servicios">Fabricación Hidráulica</a>
-    <a href="#servicios">Unidades de Presión</a>
-    <a href="#servicios">Mecanizado de Precisión</a>
-    <a href="#servicios">Automatización Industrial</a>
+    <a href="#servicios">Reparacion Cilindros HP400/500</a>
+    <a href="#servicios">Fabricacion Hidraulica</a>
+    <a href="#servicios">Unidades de Presion</a>
+    <a href="#servicios">Mecanizado de Precision</a>
+    <a href="#servicios">Reparacion Chancadoras</a>
   </div>
   <div class="foot-col">
     <h4>Productos</h4>
-    <a href="#productos">Sellos Hidráulicos</a>
+    <a href="#productos">Sellos Hidraulicos</a>
     <a href="#productos">Barras Cromadas</a>
-    <a href="#productos">Tubos Bruñidos</a>
+    <a href="#productos">Tubos Brunidos</a>
     <a href="#productos">Bombas y Motores</a>
     <a href="#productos">Prensadora Mangueras</a>
   </div>
   <div class="foot-col">
     <h4>Contacto</h4>
-    <p>📍 Ate, Parque Industrial<br>Lima, Perú</p>
-    <a href="https://wa.me/51981253238">📱 +51 981 253 238</a>
-    <a href="mailto:humberto.charri@prohidraut.com">✉️ humberto.charri@prohidraut.com</a>
-    <p style="margin-top:12px;color:rgba(255,255,255,.15);font-size:11px">ISO 9001:2015 · OHSAS 18001</p>
+    <p>Ate, Parque Industrial — Lima, Peru</p>
+    <a href="https://wa.me/51981253238">+51 981 253 238</a>
+    <a href="mailto:humberto.charri@prohidraut.com">humberto.charri@prohidraut.com</a>
+    <p style="margin-top:12px;color:rgba(255,255,255,.15);font-size:11px">ISO 9001:2015 — OHSAS 18001</p>
   </div>
   <div class="foot-bottom">
-    <span>© 2026 PROHIDRAUT S.A. — Todos los derechos reservados</span>
-    <span>Ate · Lima · Perú</span>
+    <span>2026 PROHIDRAUT S.A. — Todos los derechos reservados</span>
+    <span>Ate — Lima — Peru</span>
   </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/51981253238?text=Hola%2C%20necesito%20informaci%C3%B3n" class="wa-float">
+<!-- WA FLOAT -->
+<a href="https://wa.me/51981253238?text=Hola%20Prohidraut%2C%20necesito%20informacion" class="wa-float">
   <div class="wa-pulse"></div>
-  💬
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 </body>
